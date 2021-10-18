@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { Input } from "../elements/input"
 import { Context } from '../lib/settingContext';
+import './locationForm.css'
 
 
 export const LocationForm = () => {
@@ -20,10 +21,9 @@ export const LocationForm = () => {
     return(
         <div >
         <form onSubmit = { onSubmit }>
-                <fieldset disabled = {false}>
-                    <legend>Местоположение</legend>
+                <fieldset className='field'>
                     <Input
-                        label = 'Введите город'
+                        label = 'Enter the point'
                         error = { form.formState.errors.email }
                         register = { form.register('location') } />
                         <button type='submit'>search</button>

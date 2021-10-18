@@ -31,8 +31,7 @@ const marks = [
 
 export const DiscreteSliderMarks = () => {
     const { setTemperature } = useContext(Context)
-    const onChangeHandler = (event) =>{
-        event.preventDefault()
+    const onChangeHandler = (event) => {
         setTemperature(event.target.value)
     }
 
@@ -41,8 +40,8 @@ export const DiscreteSliderMarks = () => {
             <Box sx={{ width: 300 }}>
                 <Slider
                     aria-label="Custom marks"
-                    defaultValue={20}
-                    onChange = {onChangeHandler}
+                    defaultValue={15}
+                    onChange={onChangeHandler}
                     step={1}
                     valueLabelDisplay="auto"
                     marks={marks}
@@ -50,6 +49,7 @@ export const DiscreteSliderMarks = () => {
                     max={50}
                 />
             </Box>
+            <a href='https://cors-anywhere.herokuapp.com/'>to fix CORS problem</a>
         </footer>
     );
 }
