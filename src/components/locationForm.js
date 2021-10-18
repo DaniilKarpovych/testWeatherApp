@@ -6,9 +6,9 @@ import './locationForm.css'
 
 
 export const LocationForm = () => {
-    const {setCoordinate, setAllowment} = useContext(Context)
+    const { setCoordinate, setAllowment } = useContext(Context)
     const form = useForm({
-        mode:     'onTouched',
+        mode: 'onTouched',
     });
 
     const onSubmit = form.handleSubmit(async (credentials) => {
@@ -18,18 +18,17 @@ export const LocationForm = () => {
     });
 
 
-    return(
+    return (
         <div >
-        <form onSubmit = { onSubmit }>
+            <form onSubmit={onSubmit}>
                 <fieldset className='field'>
                     <Input
-                        label = 'Enter the point'
-                        error = { form.formState.errors.email }
-                        register = { form.register('location') } />
-                        <button type='submit'>search</button>
-                        </fieldset>
-                        
-        </form>
+                        label='Enter the point'
+                        error={form.formState.errors.email}
+                        register={form.register('location')} />
+                    <button type='submit'>search</button>
+                </fieldset>
+            </form>
         </div>
     )
 }

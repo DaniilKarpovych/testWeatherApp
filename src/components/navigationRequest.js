@@ -8,14 +8,14 @@ import { Context } from '../lib/settingContext';
 
 export const SimpleBackdrop = () => {
     const [open, setOpen] = useState(true);
-    const {setAllowment} = useContext(Context)
+    const { setAllowment } = useContext(Context)
     const handleClose = () => {
         setOpen(false);
     };
     useGetCordinate()
     const handleAccept = () => {
-       setOpen(true)
-       setAllowment(true)
+        setOpen(true)
+        setAllowment(true)
     }
     return (
         <div>
@@ -28,13 +28,13 @@ export const SimpleBackdrop = () => {
                 <div className='buttonBox'>
                     <h2>Allow access to your location</h2>
                     <Stack spacing={2} direction="row" justifyContent="center">
-                        <Button 
-                        onClick = {handleAccept}
-                        variant="contained">
-                        accept</Button>
-                        <Button 
-                        variant="outlined"
-                        onClick={handleClose}
+                        <Button
+                            onClick={handleAccept}
+                            variant="contained">
+                            accept</Button>
+                        <Button
+                            variant="outlined"
+                            onClick={handleClose}
                         >decline</Button>
                     </Stack>
                 </div>

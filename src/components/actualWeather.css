@@ -1,13 +1,31 @@
 .container {
-    position: fixed;
-    width: 300px;
-    height: 150px;
-    top:50%;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -75px;
-    border: 1px solid black;
+  text-align: left;
+  display: flex;
+  position: fixed;
+  width: 350px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -75px;
+  border: 1px solid black;
 }
-.redspan{
-    color: red;
+.fail_container {
+  position: fixed;
+  width: 350px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -75px;
+  border: 1px solid black;
+}
+.redspan {
+  color: red;
+}
+
+img {
+  margin: 15px;
+  width: 32px;
+  height: 32px;
 }

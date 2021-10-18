@@ -1,8 +1,7 @@
 .buttonBox {
-    width: 400px;
-    height: 150px;
-    color: black;
-    background: rgb(255, 255, 255);
-    /* webkit-tap-highlight-color:  */
-
+  width: 400px;
+  height: 150px;
+  color: black;
+  background: rgb(255, 255, 255);
+  /* webkit-tap-highlight-color:  */
 }

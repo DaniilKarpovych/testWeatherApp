@@ -25,6 +25,10 @@ const marks = [
         value: 50,
         label: '50°C',
     },
+    {
+        value: 100,
+        label: '100°C',
+    },
 ];
 
 
@@ -46,7 +50,7 @@ export const DiscreteSliderMarks = () => {
                     valueLabelDisplay="auto"
                     marks={marks}
                     min={-20}
-                    max={50}
+                    max={100}
                 />
             </Box>
             <a href='https://cors-anywhere.herokuapp.com/'>to fix CORS problem</a>
